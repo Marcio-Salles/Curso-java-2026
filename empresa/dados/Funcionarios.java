@@ -1,17 +1,19 @@
-package empresa.dados; // Pacote
+package empresa.dados;
 
-public class Funcionarios {  // Váriaveis
+public class Funcionarios {
+    private String nome;
+    private double salario;
 
-	String nome;
-	double salario;
+    public Funcionarios(String nomeInit, double salarioInit) {
+        nome = nomeInit;
+        salario = salarioInit;
+    }
 
-	public Funcionarios (String nomeInit, double salarioInit){ // Método Construtor
+    public String obterInfo() {
+        return "Nome: " + nome + ", Salário: " + salario;
+    }
 
-		nome = nomeInit; 
-		salario = salarioInit;          // Inicialização Método contrutor
-
-		System.out.println("Nome: " + nome);
-		System.out.println("O sálario ´: " + salario);
-	}
+    public void aumentarSalario(double aumento) {
+        salario += aumento;
+    }
 }
-

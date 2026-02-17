@@ -1,10 +1,16 @@
-import empresa.dados.Funcionarios; // Colocando * no lugar de Funcionarios 
-									//ele importara todos arquivos do pacote
+import empresa.dados.*;
 
-public class FolhaDePagamento {
-	
-	public static void main(String[] args)	{
+class FolhaDePagamento {
+    
+    public static void main(String[] args) {
+    
+    Funcionarios funcionarios = new Funcionarios("Marcio", 3300.00);
 
-		Funcionarios funcionario = new Funcionarios ("Marcio", 3300.00);
-	}
+    System.out.println(funcionarios.obterInfo());
+
+
+        funcionarios.aumentarSalario(3000.00);
+
+        System.out.println(funcionarios.obterInfo());
+    }
 }
