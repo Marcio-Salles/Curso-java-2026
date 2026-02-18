@@ -8,9 +8,15 @@ class FolhaDePagamento {
 
     System.out.println(funcionarios.obterInfo());
 
+    funcionarios.alterarQualquerSalario ( funcionarios, 3900.00 );
 
-        funcionarios.aumentarSalario(3000.00);
+    System.out.println(funcionarios.obterInfo());
 
-        System.out.println(funcionarios.obterInfo());
+        //funcionarios.aumentarSalario(3000.00);
+
+        //System.out.println(funcionarios.obterInfo());
     }
 }
+
+
+

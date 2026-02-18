@@ -16,4 +16,10 @@ public class Funcionarios {
     public void aumentarSalario(double aumento) {
         salario += aumento;
     }
+
+        // Método para alterar o salário
+
+        public void alterarQualquerSalario(Funcionarios func, double novoSalario){
+        func.salario = novoSalario;
+    }
 }
